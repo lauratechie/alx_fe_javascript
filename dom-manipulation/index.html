@@ -4,12 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic Quote Generator</title>
+    <style>
+        /* Status bar styles */
+        .sync-bar {
+            padding: 8px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .success { background: #d4edda; color: #155724; }
+        .warning { background: #fff3cd; color: #856404; }
+        .error   { background: #f8d7da; color: #721c24; }
+    </style>
 </head>
 <body>
     <h1>Dynamic Quote Generator</h1>
+
+    <!-- Sync status bar -->
+    <div id="syncStatus" class="sync-bar">🔄 Waiting to sync...</div>
+
+    <!-- Quote display -->
     <div id="quoteDisplay"></div>
     <button id="newQuote">Show New Quote</button>
 
+    <!-- Add Quote form will be created dynamically -->
     <div id="addQuoteForm"></div>
 
     <hr>
