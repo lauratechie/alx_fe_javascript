@@ -1,14 +1,22 @@
 <!DOCTYPE html>
-  <html lang="en">
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic Quote Generator</title>
-  </head>
-  <body>
+</head>
+<body>
     <h1>Dynamic Quote Generator</h1>
     <div id="quoteDisplay"></div>
     <button id="newQuote">Show New Quote</button>
+
+    <div id="addQuoteForm"></div>
+
+    <hr>
+    <h3>Import/Export Quotes</h3>
+    <button id="exportJson">Export Quotes as JSON</button>
+    <input type="file" id="importFile" accept=".json" />
+
     <script src="script.js"></script>
-  </body>
-  </html>
+</body>
+</html>
